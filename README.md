@@ -1,2 +1,3 @@
 # NFT-ICO
-Launch your own NFT Initial Coin Offering
+
+Launching Initial Coin Offering of Crypto Dev Tokens
