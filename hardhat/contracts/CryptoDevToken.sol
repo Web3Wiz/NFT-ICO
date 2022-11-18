@@ -8,7 +8,7 @@ import "./ICryptoDev.sol";
 contract CryptoDevToken is ERC20, Ownable {
     ICryptoDev ICryptoDevNFTContract;
 
-    uint256 public maxAvailableTokens = 10000 * 10**18;
+    uint256 public maxTotalSupply = 10000 * 10**18;
     uint256 public freeTokensForOneNFT = 10 * 10**18;
     uint256 public tokenPrice = 0.00001 ether;
 
@@ -59,7 +59,7 @@ contract CryptoDevToken is ERC20, Ownable {
 
         uint256 numOfTokens = tokens * 10**18;
         require(
-            totalSupply() + numOfTokens < maxAvailableTokens,
+            totalSupply() + numOfTokens < maxTotalSupply,
             "Can not mint more tokens. Max limit reached."
         );
 
@@ -80,4 +80,16 @@ contract CryptoDevToken is ERC20, Ownable {
 
 /*
 CryptoDevToken deployed address is:  0xF30180724781f58AC5d8E43df9ac5D88d334E332
+*/
+
+/*
+
+Current gas price: 10109343009
+Estimated gas: 2100276
+Deployer balance:  3.653693786150234404
+Deployment price:  0.021232410497570484
+CryptoDevToken deployed address is:  0xa21192Aa7b552a4321496Dca68cF2A0dC449430a 
+
+(Deployed only to rename maxTotalSupply. Otherwise last deployed contract is fine)
+
 */

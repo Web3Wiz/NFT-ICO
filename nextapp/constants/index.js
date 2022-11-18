@@ -1,5 +1,5 @@
 export const CRYPTO_DEV_TOKEN_CONTRACT_ADDRESS =
-  "0xF30180724781f58AC5d8E43df9ac5D88d334E332";
+  "0xa21192Aa7b552a4321496Dca68cF2A0dC449430a";
 export const CRYPTO_DEV_TOKEN_CONTRACT_ABI = [
   {
     inputs: [
@@ -254,7 +254,7 @@ export const CRYPTO_DEV_TOKEN_CONTRACT_ABI = [
   },
   {
     inputs: [],
-    name: "maxAvailableTokens",
+    name: "maxTotalSupply",
     outputs: [
       {
         internalType: "uint256",
